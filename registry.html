@@ -32,12 +32,27 @@ color:green;
 font-weight:bold;
 }
 
-a{
-display:inline-block;
-margin-top:20px;
-color:#0b5d3b;
-font-weight:bold;
-text-decoration:none;
+.panel{
+background:white;
+padding:15px;
+border-radius:10px;
+margin-bottom:20px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input{
+padding:8px;
+margin:5px;
+width:200px;
+}
+
+button{
+padding:8px 12px;
+background:#0b5d3b;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
 }
 </style>
 
@@ -46,26 +61,37 @@ text-decoration:none;
 <body>
 
 <header>
-<h1>🧾 Реестр граждан Королевства Аурелия</h1>
-<p>Официальная государственная база граждан</p>
+<h1>🧾 Реестр граждан Аурелии</h1>
+<p>Государственная база граждан</p>
 </header>
 
 <nav>
 <a href="index.html">Главная</a>
-<a href="passport.html">Паспорт</a>
-<a href="citizenship.html">Гражданство</a>
 <a href="apply.html">Заявка</a>
-<a href="currency.html">Валюта</a>
-<a href="coat-of-arms.html">Герб</a>
-<a href="government.html">Правительство</a>
 <a href="news.html">Новости</a>
 </nav>
 
 <main>
 
-<div class="card">
+<!-- ПАНЕЛЬ ДОБАВЛЕНИЯ -->
+<div class="panel">
+<h2>➕ Добавить гражданина</h2>
 
-<h2>📋 Список граждан</h2>
+<input type="text" placeholder="Имя">
+<input type="text" placeholder="Статус (Гражданин / Монарх)">
+<input type="text" placeholder="ID (AUR-0002)">
+
+<button>Добавить (вручную)</button>
+
+<p style="font-size:12px;color:gray;">
+⚠️ Пока добавление вручную (это симуляция государства)
+</p>
+</div>
+
+<!-- РЕЕСТР -->
+<div class="panel">
+
+<h2>📋 Граждане</h2>
 
 <table>
 
@@ -73,7 +99,7 @@ text-decoration:none;
 <th>№</th>
 <th>Имя</th>
 <th>Статус</th>
-<th>Номер</th>
+<th>ID</th>
 </tr>
 
 <tr>
@@ -83,11 +109,11 @@ text-decoration:none;
 <td>AUR-0001</td>
 </tr>
 
+<!-- 👇 СЮДА БУДЕШЬ ДОБАВЛЯТЬ ЛЮДЕЙ -->
+
 </table>
 
 </div>
-
-<a href="index.html">← На главную</a>
 
 </main>
 
