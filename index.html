@@ -3,80 +3,126 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Официальный портал | Королевство Аурелия</title>
-<link rel="stylesheet" href="css/style.css">
+<title>Империя Аурелия | Главный портал</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#eef7ef;
+color:#222;
+}
+
+header{
+background:#0b5d3b;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:42px;
+}
+
+header p{
+font-size:18px;
+opacity:0.9;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+margin-top:20px;
+}
+
+.card{
+background:white;
+padding:18px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+transition:0.2s;
+text-align:center;
+}
+
+.card:hover{
+transform:scale(1.03);
+}
+
+a{
+text-decoration:none;
+color:#0b5d3b;
+font-weight:bold;
+}
+
+.section-title{
+margin-top:30px;
+font-size:22px;
+color:#0b5d3b;
+}
+
+footer{
+background:#0b5d3b;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
-<h1>👑 Королевство Аурелия</h1>
+<h1>👑 Империя Аурелия</h1>
 <p>Официальный государственный портал</p>
 </header>
 
-<nav>
-<a href="index.html">Главная</a>
-<a href="passport.html">Паспорт</a>
-<a href="citizenship.html">Гражданство</a>
-<a href="apply.html">Заявка</a>
-<a href="currency.html">Валюта</a>
-<a href="coat-of-arms.html">Герб</a>
-<a href="government.html">Правительство</a>
-<a href="news.html">Новости</a>
-</nav>
+<div class="container">
 
-<main>
+<div class="section-title">🏛 Государственные разделы</div>
 
-<!-- ПРИВЕТСТВИЕ -->
-<div class="card">
-<h2>🌐 Добро пожаловать в Аурелию</h2>
-<p>
-Это официальный портал Королевства Аурелия — цифрового государства,
-созданного для культуры, природы и развития.
-</p>
+<div class="grid">
+
+<div class="card"><a href="cabinet.html">👑 Кабинет правителя</a></div>
+<div class="card"><a href="registry.html">🧾 Реестр граждан</a></div>
+<div class="card"><a href="apply.html">🪪 Гражданство</a></div>
+<div class="card"><a href="passport.html">🪪 Паспорт</a></div>
+<div class="card"><a href="citizen.html">👤 Профиль гражданина</a></div>
+
 </div>
 
-<!-- СТАТУС ГОСУДАРСТВА -->
-<div class="card">
-<h2>📊 Статус государства</h2>
-<ul>
-<li>👑 Монарх: Король Лев I</li>
-<li>🏛 Столица: Эльдора</li>
-<li>🪪 Граждан: 1 (официально)</li>
-<li>🪙 Валюта: Лист (Leaf)</li>
-<li>🏳️ Статус: Активное цифровое государство</li>
-</ul>
+<div class="section-title">🌍 Государство и мир</div>
+
+<div class="grid">
+
+<div class="card"><a href="map.html">🗺️ Карта Империи</a></div>
+<div class="card"><a href="laws.html">📜 Законы</a></div>
+<div class="card"><a href="economy.html">🪙 Экономика</a></div>
+<div class="card"><a href="news.html">📰 Новости</a></div>
+
 </div>
 
-<!-- БЫСТРЫЙ ДОСТУП -->
-<div class="card">
-<h2>⚡ Быстрый доступ</h2>
-<p>Все основные разделы государства:</p>
+<div class="section-title">⚙️ Управление</div>
 
-<ul>
-<li>🪪 Паспорт гражданина</li>
-<li>🌍 Гражданство и реестр</li>
-<li>📝 Заявка на гражданство</li>
-<li>🪙 Национальная валюта</li>
-<li>🏳️ Государственный герб</li>
-<li>🏛 Правительство</li>
-<li>📰 Новости государства</li>
-</ul>
+<div class="grid">
+
+<div class="card"><a href="imperium.html">👑 Империя 2.0</a></div>
+
 </div>
 
-<!-- ИДЕЯ ГОСУДАРСТВА -->
-<div class="card">
-<h2>📜 О Королевстве</h2>
-<p>
-Аурелия — это цифровое микрогосударство, основанное на идеях природы,
-культуры и добровольного гражданства.
-</p>
 </div>
-
-</main>
 
 <footer>
-© 2026 Королевство Аурелия — Официальный государственный портал
+© 2026 Королевство Аурелия — Имперский портал
 </footer>
 
 </body>
