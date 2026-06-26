@@ -34,6 +34,12 @@ button:hover{
 background:gold;
 color:black;
 }
+
+.note{
+font-size:12px;
+color:gray;
+margin-top:10px;
+}
 </style>
 
 </head>
@@ -49,9 +55,11 @@ color:black;
 <a href="index.html">Главная</a>
 <a href="passport.html">Паспорт</a>
 <a href="citizenship.html">Гражданство</a>
+<a href="apply.html">Заявка</a>
 <a href="currency.html">Валюта</a>
 <a href="coat-of-arms.html">Герб</a>
 <a href="government.html">Правительство</a>
+<a href="news.html">Новости</a>
 </nav>
 
 <main>
@@ -60,25 +68,22 @@ color:black;
 
 <h2>📄 Форма подачи заявки</h2>
 
-<form>
+<form action="https://formspree.io/f/xnjkdaap" method="POST">
 
-<input type="text" placeholder="Ваше имя" required>
+<input type="text" name="name" placeholder="Ваше имя" required>
 
-<input type="text" placeholder="Страна проживания" required>
+<input type="text" name="country" placeholder="Страна проживания" required>
 
-<textarea rows="4" placeholder="Почему вы хотите гражданство?" required></textarea>
+<textarea name="message" rows="4" placeholder="Почему вы хотите гражданство?" required></textarea>
 
 <button type="submit">Отправить заявку</button>
 
 </form>
 
-</div>
-
-<div class="card">
-<p>
-⚠️ После отправки заявка считается условной (демо-режим).
-Сайт не хранит данные — это симуляция государства.
+<p class="note">
+После отправки заявка будет доставлена на официальную почту Аурелии.
 </p>
+
 </div>
 
 <a href="index.html">← На главную</a>
