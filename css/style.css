@@ -125,3 +125,18 @@ nav a:hover{
 background:gold;
 color:#000;
 }
+.telegram-btn{
+display:inline-block;
+background:#229ED9;
+color:white;
+padding:12px 22px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+margin-top:10px;
+}
+
+.telegram-btn:hover{
+background:#1b8ac7;
+}
