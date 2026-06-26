@@ -3,18 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Рассмотрение заявок | Аурелия</title>
+<title>Министерство гражданства | Аурелия</title>
 <link rel="stylesheet" href="css/style.css">
 
 <style>
-.card{
-margin-bottom:15px;
+.panel{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+margin-bottom:20px;
+}
+
+.status{
+color:orange;
+font-weight:bold;
 }
 
 .btn{
 display:inline-block;
-padding:8px 12px;
-border-radius:6px;
+padding:10px 15px;
+border-radius:8px;
 text-decoration:none;
 font-weight:bold;
 margin-right:10px;
@@ -36,14 +45,12 @@ color:white;
 <body>
 
 <header>
-<h1>🗳️ Рассмотрение заявок</h1>
-<p>Министерство гражданства Аурелии</p>
+<h1>🗳️ Министерство гражданства</h1>
+<p>Рассмотрение заявок на гражданство Аурелии</p>
 </header>
 
 <nav>
 <a href="index.html">Главная</a>
-<a href="passport.html">Паспорт</a>
-<a href="citizenship.html">Гражданство</a>
 <a href="apply.html">Заявка</a>
 <a href="registry.html">Реестр</a>
 <a href="news.html">Новости</a>
@@ -51,15 +58,17 @@ color:white;
 
 <main>
 
-<div class="card">
+<div class="panel">
 
 <h2>📩 Новая заявка</h2>
 
-<p><b>Имя:</b> (пока приходит на почту)</p>
+<p><b>Статус:</b> <span class="status">Ожидает рассмотрения</span></p>
+
+<p><b>Имя:</b> (из письма Formspree)</p>
 <p><b>Страна:</b> —</p>
 <p><b>Причина:</b> —</p>
 
-<a class="btn approve" href="#">✅ Одобрить</a>
+<a class="btn approve" href="#">✅ Одобрить (вручную)</a>
 <a class="btn reject" href="#">❌ Отклонить</a>
 
 </div>
