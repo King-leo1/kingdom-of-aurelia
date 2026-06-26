@@ -107,3 +107,21 @@ opacity:0.9;
 font-size:50px;
 margin-bottom:10px;
 }
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+}
+
+nav a{
+background:#0b5d3b;
+padding:8px 12px;
+border-radius:8px;
+transition:0.2s;
+}
+
+nav a:hover{
+background:gold;
+color:#000;
+}
