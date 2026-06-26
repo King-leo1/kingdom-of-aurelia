@@ -86,3 +86,24 @@ padding:20px;
 margin-top:40px;
 font-size:14px;
 }
+.hero{
+text-align:center;
+padding:50px 20px;
+background:linear-gradient(135deg,#0b5d3b,#1a8f55);
+color:white;
+}
+
+.hero h1{
+font-size:45px;
+margin:10px 0;
+}
+
+.quote{
+font-style:italic;
+opacity:0.9;
+}
+
+.flag{
+font-size:50px;
+margin-bottom:10px;
+}
