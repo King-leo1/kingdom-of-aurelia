@@ -140,3 +140,17 @@ margin-top:10px;
 .telegram-btn:hover{
 background:#1b8ac7;
 }
+.info-table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+.info-table td{
+padding:12px;
+border-bottom:1px solid #ddd;
+}
+
+.info-table tr:hover{
+background:#f5f5f5;
+}
