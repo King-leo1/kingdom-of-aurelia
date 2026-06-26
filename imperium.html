@@ -3,39 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Империя Аурелия | Центральный Портал</title>
+<title>Империя Аурелия 2.0</title>
 <link rel="stylesheet" href="css/style.css">
 
 <style>
 body{
-background:#0b1f14;
+background:#070f0a;
 color:white;
 }
 
-.portal{
-max-width:1000px;
-margin:auto;
+header{
+text-align:center;
 padding:20px;
+}
+
+.panel{
+background:#123524;
+padding:15px;
+border-radius:12px;
+margin-bottom:15px;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:15px;
-margin-top:20px;
 }
 
 .card{
-background:#123524;
-padding:20px;
-border-radius:15px;
+background:#1a3d28;
+padding:15px;
+border-radius:12px;
 text-align:center;
 transition:0.2s;
 }
 
 .card:hover{
 transform:scale(1.05);
-background:#1a4a30;
+background:#245c3d;
 }
 
 a{
@@ -44,15 +49,20 @@ text-decoration:none;
 font-weight:bold;
 }
 
-h1{
-text-align:center;
-font-size:36px;
+.stat{
+font-size:18px;
+font-weight:bold;
+color:#b8ffd6;
 }
 
-.subtitle{
-text-align:center;
-color:#b8ffd6;
-margin-bottom:20px;
+button{
+padding:10px;
+border:none;
+border-radius:8px;
+background:gold;
+color:black;
+font-weight:bold;
+cursor:pointer;
 }
 </style>
 
@@ -60,26 +70,76 @@ margin-bottom:20px;
 
 <body>
 
-<div class="portal">
+<header>
+<h1>👑 ИМПЕРИЯ АУРЕЛИЯ 2.0</h1>
+<p>Центральная система управления государством</p>
+</header>
 
-<h1>👑 ИМПЕРИЯ АУРЕЛИЯ</h1>
-<p class="subtitle">Центральный государственный портал управления</p>
+<main class="panel">
+
+<h2>📊 Имперская статистика</h2>
 
 <div class="grid">
 
-<div class="card"><a href="index.html">🌐 Главная</a></div>
+<div class="card">
+<div class="stat">👥 1+ граждан</div>
+<p>Реестр активен</p>
+</div>
+
+<div class="card">
+<div class="stat">🪙 Валюта: Leaf</div>
+<p>Экономика стабильна</p>
+</div>
+
+<div class="card">
+<div class="stat">📩 Заявки</div>
+<p>Formspree активен</p>
+</div>
+
+<div class="card">
+<div class="stat">🏛 Статус</div>
+<p>Активная империя</p>
+</div>
+
+</div>
+
+</main>
+
+<main class="panel">
+
+<h2>⚙️ Управление Империей</h2>
+
+<div class="grid">
+
 <div class="card"><a href="registry.html">🧾 Реестр граждан</a></div>
-<div class="card"><a href="apply.html">🪪 Гражданство</a></div>
-<div class="card"><a href="cabinet.html">👑 Кабинет короля</a></div>
-<div class="card"><a href="map.html">🗺️ Карта Империи</a></div>
+<div class="card"><a href="apply.html">🪪 Заявки</a></div>
+<div class="card"><a href="cabinet.html">👑 Кабинет</a></div>
+<div class="card"><a href="map.html">🗺️ Карта</a></div>
 <div class="card"><a href="laws.html">📜 Законы</a></div>
 <div class="card"><a href="economy.html">🪙 Экономика</a></div>
 <div class="card"><a href="news.html">📰 Новости</a></div>
-<div class="card"><a href="citizen.html">👤 Профиль гражданина</a></div>
 
 </div>
 
-</div>
+</main>
+
+<main class="panel">
+
+<h2>🔐 Быстрые действия</h2>
+
+<button onclick="alert('Пока вручную: добавь гражданина в реестр')">
+➕ Добавить гражданина
+</button>
+
+<button onclick="alert('Пока вручную: редактирование экономики')">
+💰 Управление экономикой
+</button>
+
+<button onclick="alert('Пока вручную: создать новость')">
+📰 Новая новость
+</button>
+
+</main>
 
 </body>
 </html>
