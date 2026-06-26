@@ -3,64 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Империя Аурелия | Портал</title>
+<title>Реестр граждан Аурелии | Портал</title>
 
 <style>
 body{
 margin:0;
 font-family:Arial,sans-serif;
-background:#eef7ef;
-color:#222;
+background:#eaf5ee;
 }
 
+/* ЗЕЛЁНЫЙ ХЕДЕР */
 header{
-background:#0b5d3b;
+background:linear-gradient(135deg,#0b5d3b,#0a3f29);
 color:white;
-padding:40px;
 text-align:center;
+padding:50px 20px;
 }
 
 header h1{
 margin:0;
-font-size:42px;
+font-size:40px;
 }
 
+header p{
+margin-top:10px;
+font-size:18px;
+opacity:0.9;
+}
+
+/* МЕНЮ КНОПКИ */
+.menu{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+padding:20px;
+background:#0b5d3b;
+}
+
+.menu a{
+background:#136a45;
+color:white;
+padding:12px 18px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+transition:0.2s;
+}
+
+.menu a:hover{
+background:gold;
+color:black;
+transform:scale(1.05);
+}
+
+/* БЛОКИ */
 .container{
 max-width:1100px;
 margin:auto;
 padding:20px;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:15px;
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
 margin-top:20px;
 }
 
-.card{
-background:white;
-padding:18px;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+margin-top:15px;
+}
+
+.small-card{
+background:#ffffff;
+padding:15px;
 border-radius:12px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
 text-align:center;
-transition:0.2s;
+box-shadow:0 0 8px rgba(0,0,0,0.08);
 }
 
-.card:hover{
-transform:scale(1.03);
-}
-
-a{
+.small-card a{
 text-decoration:none;
 color:#0b5d3b;
 font-weight:bold;
-}
-
-.section-title{
-margin-top:30px;
-font-size:22px;
-color:#0b5d3b;
 }
 
 footer{
@@ -78,36 +108,63 @@ margin-top:40px;
 
 <header>
 <h1>👑 Империя Аурелия</h1>
-<p>Официальный государственный портал</p>
+<p>Кликабельная государственная система</p>
 </header>
+
+<!-- ГЛАВНОЕ МЕНЮ -->
+<div class="menu">
+<a href="index.html">Главная</a>
+<a href="registry.html">Реестр</a>
+<a href="apply.html">Заявка</a>
+<a href="news.html">Новости</a>
+<a href="map.html">Карта</a>
+<a href="cabinet.html">Кабинет</a>
+</div>
 
 <div class="container">
 
-<div class="section-title">🏛 Государство</div>
+<!-- ОСНОВНЫЕ РАЗДЕЛЫ -->
+<div class="card">
+<h2>🏛 Государственные разделы</h2>
 
 <div class="grid">
 
-<div class="card"><a href="registry.html">🧾 Реестр граждан</a></div>
-<div class="card"><a href="apply.html">🪪 Гражданство</a></div>
-<div class="card"><a href="passport.html">🪪 Паспорт</a></div>
+<div class="small-card"><a href="registry.html">🧾 Реестр граждан</a></div>
+<div class="small-card"><a href="apply.html">🪪 Гражданство</a></div>
+<div class="small-card"><a href="passport.html">🪪 Паспорт</a></div>
+<div class="small-card"><a href="laws.html">📜 Законы</a></div>
 
 </div>
+</div>
 
-<div class="section-title">🌍 Мир государства</div>
+<!-- МИР -->
+<div class="card">
+<h2>🌍 Мир Империи</h2>
 
 <div class="grid">
 
-<div class="card"><a href="map.html">🗺️ Карта Империи</a></div>
-<div class="card"><a href="laws.html">📜 Законы</a></div>
-<div class="card"><a href="economy.html">🪙 Экономика</a></div>
-<div class="card"><a href="news.html">📰 Новости</a></div>
+<div class="small-card"><a href="map.html">🗺️ Карта</a></div>
+<div class="small-card"><a href="economy.html">🪙 Экономика</a></div>
+<div class="small-card"><a href="news.html">📰 Новости</a></div>
 
+</div>
+</div>
+
+<!-- ДОПОЛНИТЕЛЬНО -->
+<div class="card">
+<h2>⚙️ Дополнительно</h2>
+
+<div class="grid">
+
+<div class="small-card"><a href="citizen.html">👤 Профиль гражданина</a></div>
+
+</div>
 </div>
 
 </div>
 
 <footer>
-© 2026 Королевство Аурелия — Портал
+© 2026 Королевство Аурелия — Государственный портал
 </footer>
 
 </body>
