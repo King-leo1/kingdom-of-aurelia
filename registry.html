@@ -27,32 +27,25 @@ background:#0b5d3b;
 color:white;
 }
 
+a.name{
+color:#0b5d3b;
+font-weight:bold;
+text-decoration:none;
+}
+
+a.name:hover{
+text-decoration:underline;
+}
+
 .status{
 color:green;
 font-weight:bold;
 }
 
-.panel{
-background:white;
-padding:15px;
-border-radius:10px;
-margin-bottom:20px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
-
-input{
-padding:8px;
-margin:5px;
-width:200px;
-}
-
-button{
-padding:8px 12px;
-background:#0b5d3b;
-color:white;
-border:none;
-border-radius:6px;
-cursor:pointer;
+.note{
+font-size:12px;
+color:gray;
+margin-top:10px;
 }
 </style>
 
@@ -62,36 +55,22 @@ cursor:pointer;
 
 <header>
 <h1>🧾 Реестр граждан Аурелии</h1>
-<p>Государственная база граждан</p>
+<p>Кликабельная государственная база граждан</p>
 </header>
 
 <nav>
 <a href="index.html">Главная</a>
 <a href="apply.html">Заявка</a>
 <a href="news.html">Новости</a>
+<a href="map.html">Карта</a>
+<a href="cabinet.html">Кабинет</a>
 </nav>
 
 <main>
 
-<!-- ПАНЕЛЬ ДОБАВЛЕНИЯ -->
-<div class="panel">
-<h2>➕ Добавить гражданина</h2>
+<div class="card">
 
-<input type="text" placeholder="Имя">
-<input type="text" placeholder="Статус (Гражданин / Монарх)">
-<input type="text" placeholder="ID (AUR-0002)">
-
-<button>Добавить (вручную)</button>
-
-<p style="font-size:12px;color:gray;">
-⚠️ Пока добавление вручную (это симуляция государства)
-</p>
-</div>
-
-<!-- РЕЕСТР -->
-<div class="panel">
-
-<h2>📋 Граждане</h2>
+<h2>📋 Граждане государства</h2>
 
 <table>
 
@@ -102,16 +81,36 @@ cursor:pointer;
 <th>ID</th>
 </tr>
 
+<!-- 👑 ГРАЖДАНЕ -->
+
 <tr>
 <td>1</td>
-<td>Король Лев I</td>
+<td>
+<a class="name" href="citizen.html">
+Король Лев I
+</a>
+</td>
 <td class="status">Монарх</td>
 <td>AUR-0001</td>
 </tr>
 
-<!-- 👇 СЮДА БУДЕШЬ ДОБАВЛЯТЬ ЛЮДЕЙ -->
+<!-- ДОБАВЛЯЕМЫЕ ГРАЖДАНЕ -->
+<tr>
+<td>2</td>
+<td>
+<a class="name" href="citizen.html">
+Гражданин (пример)
+</a>
+</td>
+<td class="status">Гражданин</td>
+<td>AUR-0002</td>
+</tr>
 
 </table>
+
+<p class="note">
+💡 Нажмите на имя гражданина, чтобы открыть его профиль
+</p>
 
 </div>
 
